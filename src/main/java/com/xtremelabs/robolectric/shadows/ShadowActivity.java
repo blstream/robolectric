@@ -334,6 +334,7 @@ public class ShadowActivity extends ShadowContextWrapper {
 		return true;
 	}
 
+	@Implementation
 	public SharedPreferences getPreferences(int mode) {
 		return this.getSharedPreferences("TEST", mode);
 	}
